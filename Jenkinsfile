@@ -8,16 +8,16 @@ pipeline {
         SCANNER_VERSION       = '2.5.2'
         DEEPFENCE_PRODUCT     = 'ThreatMapper'
 
-        // --- Updated Failure Conditions to allow the build to pass ---
-        // Thresholds are set higher than the last known scan results.
-        FAIL_ON_CRITICAL_VULNS = 10  // Your scan found 5
-        FAIL_ON_HIGH_VULNS     = 30  // Your scan found 26
-        FAIL_ON_MEDIUM_VULNS   = 60  // Your scan found 58
-        FAIL_ON_LOW_VULNS      = 20  // Your scan found 15
+        // --- Updated Failure Conditions 
+       
+        FAIL_ON_CRITICAL_VULNS = 10 
+        FAIL_ON_HIGH_VULNS     = 30  
+        FAIL_ON_MEDIUM_VULNS   = 60  
+        FAIL_ON_LOW_VULNS      = 20  
 
         // --- Secrets & Malware Failure Conditions ---
-        FAIL_ON_HIGH_SECRETS   = 4   // Your scan found 0
-        FAIL_ON_HIGH_MALWARE   = 4   // Your scan found 1
+        FAIL_ON_HIGH_SECRETS   = 4  
+        FAIL_ON_HIGH_MALWARE   = 4   
     }
 
     stages {
