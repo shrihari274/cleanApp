@@ -55,7 +55,9 @@ pipeline {
                             -fail-on-high-count=${FAIL_ON_HIGH_VULNS} \
                             -fail-on-medium-count=${FAIL_ON_MEDIUM_VULNS} \
                             -fail-on-low-count=${FAIL_ON_LOW_VULNS}
-                            -no-db-update=true
+                            -no-db-update=true \
+                            -k \
+                            -v
                         """
                     }
                 }
