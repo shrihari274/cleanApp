@@ -113,7 +113,7 @@ pipeline {
             steps {
                 echo "All scans passed! Deploying the application..."
                 // Example deployment:
-                // sh "docker run -d -p 5000:5000 ${IMAGE_NAME}"
+               sh "docker run -d -p 5000:5000 ${IMAGE_NAME}"
             }
         }
     }
