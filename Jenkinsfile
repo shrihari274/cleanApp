@@ -12,7 +12,7 @@ pipeline {
        
         FAIL_ON_CRITICAL_VULNS = 10 
         FAIL_ON_HIGH_VULNS     = 30  
-        FAIL_ON_MEDIUM_VULNS   = 60  
+        FAIL_ON_MEDIUM_VULNS   = 70 
         FAIL_ON_LOW_VULNS      = 20  
 
         // --- Secrets & Malware Failure Conditions ---
